@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite">
+	<!-- We can change paramter as well -->
+
+	<parameter name="UserName" value="admin"></parameter>
+	<parameter name="Password" value="password"></parameter>
+	<!-- We can run number of classes parallel by adding more classes(or adding
+	parallel attribute-->
+
+	<test name="SmokeTest">
+		<!-- We can run number of classes parallel by adding more classes-->
+		<classes>
+
+			<class name="SeleniumJan.TestNGExample">
+				<methods>
+				<include name="testWithDataProviderCreateEmployee"></include>
+</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

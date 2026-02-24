@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="UserName" value="admin"/>
+  <parameter name="Password" value="password"/>
+  <test thread-count="5" name="SmokeTest(failed)">
+    <classes>
+      <class name="SeleniumJan.TestNGExample">
+        <methods>
+          <include name="runBeforeTest"/>
+          <include name="runBeforeMethod"/>
+          <include name="afterTestExecution"/>
+          <include name="testWithDataProviderCreateEmployee" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumJan.TestNGExample -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

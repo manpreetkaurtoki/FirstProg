@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-16T16:28:58 EST" name="TestSuite" finished-at="2026-01-16T16:29:07 EST" duration-ms="8919">
+    <groups>
+    </groups>
+    <test started-at="2026-01-16T16:28:58 EST" name="SmokeTest" finished-at="2026-01-16T16:29:07 EST" duration-ms="8919">
+      <class name="SeleniumJan.TestNGExample">
+        <test-method is-config="true" signature="runBeforeTest()[pri:0, instance:SeleniumJan.TestNGExample@51399530]" started-at="2026-01-16T16:28:58 EST" name="runBeforeTest" finished-at="2026-01-16T16:29:03 EST" duration-ms="4636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runBeforeTest -->
+        <test-method is-config="true" signature="runBeforeMethod()[pri:0, instance:SeleniumJan.TestNGExample@51399530]" started-at="2026-01-16T16:29:03 EST" name="runBeforeMethod" finished-at="2026-01-16T16:29:03 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runBeforeMethod -->
+        <test-method signature="testWithDataProviderCreateEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumJan.TestNGExample@51399530]" started-at="2026-01-16T16:29:03 EST" name="testWithDataProviderCreateEmployee" data-provider="CreateEmployee" finished-at="2026-01-16T16:29:07 EST" duration-ms="3910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DDTUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ddtU@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Middle]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithDataProviderCreateEmployee -->
+        <test-method is-config="true" signature="afterTestExecution()[pri:0, instance:SeleniumJan.TestNGExample@51399530]" started-at="2026-01-16T16:29:07 EST" name="afterTestExecution" finished-at="2026-01-16T16:29:07 EST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestExecution -->
+      </class> <!-- SeleniumJan.TestNGExample -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>

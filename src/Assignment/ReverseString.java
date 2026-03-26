@@ -22,5 +22,22 @@ public class ReverseString {
 		} else {
 			System.out.println("String is not Pallindrome");
 		}
+		duplicateArray();
+	}
+	
+	public static void duplicateArray()
+	{
+		  int[] arr = {1, 2, 3, 4, 2, 5, 6, 3,6};
+
+	        System.out.print("Duplicate values: ");
+
+	        for (int i = 0; i < arr.length; i++) {
+	            for (int j = i + 1; j < arr.length; j++) {
+	                if (arr[i] == arr[j]) {
+	                    System.out.print(arr[i] + " ");
+	                    break;
+	                }
+	            }
+	        }
 	}
 }

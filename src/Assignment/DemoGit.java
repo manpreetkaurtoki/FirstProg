@@ -57,7 +57,19 @@ public class DemoGit {
 		}
 
 		System.out.println("Largest digit is: " + largest);
-
+	
+		//smallest
+		int smallest =9;
+		int checkNumber= 45667;
+		while(checkNumber>0) {
+			int compare= checkNumber % 10;
+			if(compare<smallest) {
+				smallest=compare;
+			}
+			checkNumber =checkNumber/10;
+		}
+		System.out.println("Smallest digit is: " + smallest);
+		
 		// occurrence of digit
 		
 		int newNum= 12334335;

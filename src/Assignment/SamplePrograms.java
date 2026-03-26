@@ -23,6 +23,7 @@ public class SamplePrograms {
 		}
 		factorial();
 		fibo();
+		prime();
 	}
 
 	// factorial
@@ -46,6 +47,25 @@ public class SamplePrograms {
 			second = next;
 		}
 
+	}
+	public static void prime() {
+		int num= 1;
+		int primeCheck=0;
+		for (int i=1;i<=num;i++)
+		{
+			if(num%2==0)
+			{
+				primeCheck++;
+			}
+		}
+		if (primeCheck==2)
+		{
+			System.out.println("It is prime");
+		}
+		else
+		{
+			System.out.println("It is not prime");
+		}
 	}
 
 

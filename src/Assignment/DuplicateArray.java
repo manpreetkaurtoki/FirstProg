@@ -25,12 +25,27 @@ public class DuplicateArray {
 				largest = arr[i];
 
 			}
-			if (arr[i] <smallest) {
+			if (arr[i] < smallest) {
 				smallest = arr[i];
 			}
 		}
 		System.out.println("largest number in array is : " + largest);
 		System.out.println("smallest number in array is : " + smallest);
 
+		// Reverse an array
+		int[] arrRev = { 1, 2, 3, 4, 5 ,6,7,8,9};
+
+		// Reverse logic
+		for (int i = 0; i < arrRev.length / 2; i++) {
+			int temp = arrRev[i];
+			arrRev[i] = arrRev[arrRev.length - 1 - i];
+			arrRev[arrRev.length - 1 - i] = temp;
+		}
+
+		// Print reversed array
+		System.out.print("Reversed array: ");
+		for (int num : arrRev) {
+			System.out.print(num + " ");
+		}
 	}
 }

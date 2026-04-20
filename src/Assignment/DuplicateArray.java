@@ -55,5 +55,7 @@ public class DuplicateArray {
 			sum = sum + sumArr[i];
 		}
 		System.out.println("Sum of Array is : " + sum);
+		
+		
 	}
 }

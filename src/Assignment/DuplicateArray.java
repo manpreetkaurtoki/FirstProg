@@ -55,7 +55,17 @@ public class DuplicateArray {
 			sum = sum + sumArr[i];
 		}
 		System.out.println("Sum of Array is : " + sum);
-		
-		
+
+		// search particular item in array
+		int[] arrSearch = { 12, 4, 3, 5, 6, 4, 8, 9 };
+		int numbertoSearch = 9;
+		for (int i = 0; i < arrSearch.length; i++) {
+
+			if (numbertoSearch == arrSearch[i]) {
+				System.out.println("Element found " + arrSearch[i] + "at index " + i);
+				break;
+			} 
+		}
+
 	}
 }

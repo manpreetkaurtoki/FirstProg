@@ -33,7 +33,7 @@ public class DuplicateArray {
 		System.out.println("smallest number in array is : " + smallest);
 
 		// Reverse an array
-		int[] arrRev = { 1, 2, 3, 4, 5 ,6,7,8,9};
+		int[] arrRev = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 		// Reverse logic
 		for (int i = 0; i < arrRev.length / 2; i++) {
@@ -47,5 +47,13 @@ public class DuplicateArray {
 		for (int num : arrRev) {
 			System.out.print(num + " ");
 		}
+
+		// Sum of array
+		int[] sumArr = { 1, 4, 5, 6, 7, 3 };
+		int sum = 0;
+		for (int i = 0; i < sumArr.length; i++) {
+			sum = sum + sumArr[i];
+		}
+		System.out.println("Sum of Array is : " + sum);
 	}
 }

@@ -14,10 +14,15 @@ public class TestAnimal {
 		obj.sound();
 		obj.fur();
 
+		Animal obj1 = new Dog();
+		obj1.eat();
+		obj1.sound();
+		obj1.fur();
+
 		Dog dogObj = new Dog();
 		dogObj.eat();
 		dogObj.sound();
-		//dogObj.fur();
+		// dogObj.fur();
 		dogObj.sleep();
 		Animal.sleep();
 	}

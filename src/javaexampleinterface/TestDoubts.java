@@ -24,26 +24,39 @@ public class TestDoubts {
 
 	public static void countUpperLower() {
 		String val = "Hello World";
-		int upper=0;
+		int upper = 0;
 		int lower = 0;
 		char[] a = val.toCharArray();
-		for(int i=0;i<a.length;i++)
-		{
-			if(Character.isUpperCase(a[i])) {
+		for (int i = 0; i < a.length; i++) {
+			if (Character.isUpperCase(a[i])) {
 				upper++;
-			}
-			else if(Character.isLowerCase(a[i]))
-			{
+			} else if (Character.isLowerCase(a[i])) {
 				lower++;
 			}
 		}
-		
+
 		System.out.println(upper + " count of upper");
 		System.out.println(lower + " count of lower");
 	}
 
 	static {
 		System.out.println("I am static block");
+	}
+
+	public static void splitString() {
+		String str = "Java, Selenium, testNg,Maven";
+		String[] newStr = str.split(",");
+		for (int i = 0; i < newStr.length; i++) {
+			System.out.println(newStr[i]);
+		}
+	}
+
+	public static void stringConcat() {
+		String s1 = "ABC";
+		String s2 = "XYZ";
+		String s3 = "PQR";
+		
+		System.out.println(s1.concat(s2).concat(s3));
 	}
 
 	public static void main(String arg[]) {
@@ -65,6 +78,9 @@ public class TestDoubts {
 		d.color();
 
 		countUpperLower();
+
+		splitString();
+		stringConcat();
 	}
 
 }

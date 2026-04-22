@@ -55,8 +55,20 @@ public class TestDoubts {
 		String s1 = "ABC";
 		String s2 = "XYZ";
 		String s3 = "PQR";
-		
+
 		System.out.println(s1.concat(s2).concat(s3));
+	}
+
+	public static void countVowel() {
+		String val = "Welcomeaa";
+		int count = 0;
+		char[] val1 = val.toCharArray();
+		for (int i = 0; i < val1.length; i++) {
+			if (val1[i] == 'a' || val1[i] == 'e' ||val1[i] == 'i' || val1[i] == 'o' || val1[i] == 'u'  ) {
+				count++;
+			}
+		}
+		System.out.println(count);
 	}
 
 	public static void main(String arg[]) {
@@ -81,6 +93,7 @@ public class TestDoubts {
 
 		splitString();
 		stringConcat();
+		countVowel();
 	}
 
 }

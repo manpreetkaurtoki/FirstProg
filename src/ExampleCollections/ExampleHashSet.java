@@ -14,6 +14,7 @@ public class ExampleHashSet {
 		HashSet<String> myset1 = new HashSet<String>();
 		// adding elements
 		myset.add("JAVA");
+		myset.add("C++");
 		myset.add(100);
 		myset.add(null);
 		myset.add(null);

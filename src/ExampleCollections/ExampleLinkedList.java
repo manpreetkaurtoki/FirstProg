@@ -21,6 +21,7 @@ public class ExampleLinkedList {
 		linkedList.addLast("Bie");
 		System.out.println(linkedList);
 
+		
 		//read
 		System.out.println(linkedList.get(2));
 		

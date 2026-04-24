@@ -31,7 +31,6 @@ public class ExampleArraylist {
 		// read data
 		System.out.println(list.get(2));
 		System.out.println(list.size());
-
 		// normal for loop
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));

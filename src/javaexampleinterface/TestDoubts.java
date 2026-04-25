@@ -73,6 +73,12 @@ public class TestDoubts {
 
 	public static void main(String arg[]) {
 
+		
+		String s= "SeleniumwithJava";
+		String s1 ="seleniumwithjava";
+		System.out.println(s.equalsIgnoreCase(s1));
+		System.out.println(s.indexOf('e'));
+		System.out.println(s.indexOf('z'));
 		largeWithoutIf();
 		System.out.println("I am main block");
 		print();

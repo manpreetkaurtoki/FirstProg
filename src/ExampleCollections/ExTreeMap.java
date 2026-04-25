@@ -16,6 +16,8 @@ public class ExTreeMap {
 		tmap.put(2, "A");
 		tmap.put(6,"A");
 		tmap.put(6,"k");
+		tmap.put(7,null);
+		tmap.put(8,null);
 		System.out.println(tmap);
 		
 		System.out.println(tmap.get(3));

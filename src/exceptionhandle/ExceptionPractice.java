@@ -13,6 +13,8 @@ public class ExceptionPractice {
 			System.out.println("Program continues...");
 		}
 
+		
+
 		//multiple catch
 		try {
 			int arr[] = new int[5];
@@ -31,6 +33,7 @@ public class ExceptionPractice {
 			{
 				 throw new MyException("Access denied due to age constraint");
 			}
+			
            
         } catch (MyException e) {
             System.out.println(e.getMessage());

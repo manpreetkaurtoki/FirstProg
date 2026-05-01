@@ -13,7 +13,8 @@ public class EXLinkedHashMap {
 		lhs.put(5, "E");
 		lhs.put(4, "D");
 		lhs.put(6, null);
-		lhs.put(null, null);
+		lhs.put(7, null);
+		lhs.put(null, "L");
 		lhs.put(null, "Z");
 	
 		System.out.println(lhs);

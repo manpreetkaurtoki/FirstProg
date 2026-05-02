@@ -1,13 +1,20 @@
 package Assignment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 
 public class PdfCode {
 	public static void main(String arg[]) {
 		interator();
 		minMAx();
 		revArray();
+		removeDupArrList();
+		removeAdditionalCommon();
 	}
 
 	public static void interator() {
@@ -43,6 +50,7 @@ public class PdfCode {
 	}
 
 	public static void revArray() {
+
 		int[] array = { 43, 12, 34, 56, 89, 100 };
 		int[] newarray = {};
 		int n = array.length;
@@ -61,4 +69,28 @@ public class PdfCode {
 
 	}
 
+	public static void removeDupArrList() {
+		ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 2, 3, 4, 4, 5));
+
+		// Remove duplicates
+		LinkedHashSet<Integer> set = new LinkedHashSet<>(list);
+		ArrayList<Integer> result = new ArrayList<>(set);
+
+		System.out.println(result);
+
+		ArrayList<String> myArrayList = new ArrayList<String>(Arrays.asList("A", "C", "D", "D", "B", "C", "E", "E"));
+
+		LinkedHashSet<String> myLinked = new LinkedHashSet<String>(myArrayList);
+		System.out.println(myLinked);
+	}
+
+	public static void removeAdditionalCommon() {
+		ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+
+		ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+		//list.removeAll(list2);
+		
+		list.retainAll(list2);
+		System.out.println(list);
+	}
 }

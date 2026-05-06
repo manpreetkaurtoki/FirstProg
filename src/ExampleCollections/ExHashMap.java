@@ -15,8 +15,9 @@ public class ExHashMap {
 		hashMap.put(43, "C++");
 		hashMap.put(22, null);
 		hashMap.put(12, null);
-
+		hashMap.put(12,"JAVA");
 		// add
+		
 
 		System.out.println(hashMap);
 

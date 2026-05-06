@@ -15,6 +15,7 @@ public class PdfCode {
 		revArray();
 		removeDupArrList();
 		removeAdditionalCommon();
+		stringCount();
 	}
 
 	public static void interator() {
@@ -88,9 +89,25 @@ public class PdfCode {
 		ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
 		ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-		//list.removeAll(list2);
-		
+		// list.removeAll(list2);
+
 		list.retainAll(list2);
 		System.out.println(list);
+	}
+
+	public static void stringCount() {
+		String str = "Hello World";
+		int count = 0;
+
+		try {
+			while (true) {
+				str.charAt(count);
+				count++;
+			}
+		} catch (StringIndexOutOfBoundsException e) {
+
+		}
+
+		System.out.println("Length of string is: " + count);
 	}
 }

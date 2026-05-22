@@ -1,25 +1,30 @@
 package firstPack;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Firstclass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //System.out.print("hello my first program");
-
+		listToMapBasedonLength();
 		String value = "aabccddde";
 		String newVal = "";
 		int countA = 0;
 		int[] freq = new int[256];
 		char[] a = value.toCharArray();
 		for (int i = 0; i < a.length; i++) {
-			freq[value.charAt(i)]++;
+			freq[a[i]]++;
 			if (a[i] == 'a') {
 				countA++;
-				
+
 			}
 		}
 
-		
 		for (int i = a.length - 1; i >= 0; i--) {
 
 			newVal = newVal + a[i];
@@ -28,12 +33,12 @@ public class Firstclass {
 		System.out.println("Count of a: " + countA);
 		System.out.println("New String " + newVal);
 
-		for (int i = 0; i < value.length(); i++) {
-            if (freq[value.charAt(i)] == 1) {
-                System.out.println("First non-repeating character: " + value.charAt(i));
-               // return;
-            }
-        }
+		for (int i = 0; i < a.length; i++) {
+			if (freq[a[i]] == 1) {
+				System.out.println("First non-repeating character: " + value.charAt(i));
+				// return;
+			}
+		}
 		int[] arr = { 1, -2, 3, 4, 7, 90, 234 };
 
 		// search an element in array
@@ -87,4 +92,22 @@ public class Firstclass {
 
 	}
 
+	public static void listToMapBasedonLength() {
+		List<String> list = Arrays.asList("apple", "bat", "banana", "cat", "dog", "orange", "cucumber", "watermelon");
+
+		Map<Integer, List<String>> map = new HashMap<>();
+
+		for (String word : list) {
+			int len = word.length();
+
+			// if key doesn't exist, create new list
+			map.putIfAbsent(len, new ArrayList<>());
+
+			// add word to corresponding length group
+			map.get(len).add(word);
+		}
+
+		// print result
+		System.out.println(map);
+	}
 }

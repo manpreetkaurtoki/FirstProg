@@ -12,6 +12,7 @@ public class Firstclass {
 		// TODO Auto-generated method stub
 //System.out.print("hello my first program");
 		listToMapBasedonLength();
+		countCharacFreq();
 		String value = "aabccddde";
 		String newVal = "";
 		int countA = 0;
@@ -109,5 +110,25 @@ public class Firstclass {
 
 		// print result
 		System.out.println(map);
+	}
+
+	public static void countCharacFreq() {
+		String myString = "Helloo Wworldd";
+		myString = myString.replace(" ", "");
+
+		Map<Character, Integer> count = new HashMap();
+		for (char c : myString.toCharArray()) {
+			if (count.containsKey(c)) {
+				count.put(c, count.get(c) + 1);
+			} else {
+				count.put(c, 1);
+			}
+		}
+
+		// Print result
+		for (Map.Entry<Character, Integer> entry : count.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
+
 	}
 }

@@ -3,14 +3,17 @@ package firstPack;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Firstclass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //System.out.print("hello my first program");
+		removeDuplicate();
 		listToMapBasedonLength();
 		countCharacFreq();
 		String value = "aabccddde";
@@ -130,5 +133,27 @@ public class Firstclass {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 
+	}
+	
+	public static void removeDuplicate()
+	{
+		 List<String> names = Arrays.asList(
+	                "Apple", "Banana", "Avocado", "apple",
+	                "Orange", "Apricot", "banana", "Mango", "Apple"
+	        );
+
+	        System.out.println("Original List:");
+	        System.out.println(names);
+
+	        // 1. Remove duplicates (case-insensitive)
+	        List<String> noDuplicates = new ArrayList<>(
+	                new LinkedHashSet<>(
+	                        names.stream()
+	                                .map(String::toLowerCase)
+	                                .collect(Collectors.toList())
+	                )
+	        );
+
+	        System.out.println(noDuplicates);
 	}
 }

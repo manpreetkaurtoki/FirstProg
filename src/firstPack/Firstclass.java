@@ -14,6 +14,7 @@ public class Firstclass {
 		// TODO Auto-generated method stub
 //System.out.print("hello my first program");
 		removeDuplicate();
+		countElement();
 		listToMapBasedonLength();
 		countCharacFreq();
 		String value = "aabccddde";
@@ -133,6 +134,19 @@ public class Firstclass {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 
+	}
+	
+	public static void countElement()
+	{
+		int[] arr = {1,1, 2,2, 2, 3, 3, 3};
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int num : arr) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        System.out.println(map);
 	}
 	
 	public static void removeDuplicate()

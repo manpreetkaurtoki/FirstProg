@@ -138,7 +138,7 @@ public class Firstclass {
 	
 	public static void countElement()
 	{
-		int[] arr = {1,1, 2,2, 2, 3, 3, 3};
+		int[] arr = {1,1, 2,2, 2, 3, 3, 3,4,4,5};
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -152,7 +152,7 @@ public class Firstclass {
 	public static void removeDuplicate()
 	{
 		 List<String> names = Arrays.asList(
-	                "Apple", "Banana", "Avocado", "apple",
+	                "Apple", "Banana", "Avocado", "apple","watermelon",
 	                "Orange", "Apricot", "banana", "Mango", "Apple"
 	        );
 
